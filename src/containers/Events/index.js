@@ -19,6 +19,7 @@ const EventList = () => {
       .filter((event) => !type || event.type === type)
       .slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE)
     : []
+
   const changeType = (evtType) => {
     setCurrentPage(1);
     setType(evtType);
@@ -26,6 +27,7 @@ const EventList = () => {
   };
   const pageNumber = Math.floor((filteredEvents?.length || 0) / PER_PAGE) + 1;
   const typeList = new Set(data?.events.map((event) => event.type));
+
   return (
     <>
       {error && <div>An error occured</div>}
