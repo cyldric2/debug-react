@@ -1,21 +1,18 @@
 /* eslint-disable no-return-assign */
 import Button from "../../components/Button";
-import Logo from "../../components/Logo";
+
 
 import "./style.scss";
 
 const Menu = () => (
   <nav>
-    <Logo />
+    <h1>BOUVET Cyldric</h1>
     <ul>
       <li>
-        <a href="#nos-services">Nos services</a>
+        <a href="#présentation">Présentation</a>
       </li>
       <li>
-        <a href="#nos-realisations">Nos réalisations</a>
-      </li>
-      <li>
-        <a href="#notre-equipe">Notre équipe</a>
+        <a href="#mes-réalisations">Mes réalisations</a>
       </li>
     </ul>
     <Button title="contact" onClick={() => (window.document.location.hash = "#contact")}>
